@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 class Notes {
 	public static void main(String[] args) {
 		//char
@@ -30,22 +30,22 @@ class Notes {
 		//Runtime errors - Errors that can happen sometimes and not other times
 		//Happen during execution of the code.  Any code above still executes
 
+		Scanner s = new Scanner(System.in);
 		// int num = 5;
 		// int num1 = 0;
 		// System.out.println(num/num1);
 
-		Scanner s = new Scanner(System.in);
 
-		// s.nextInt(); //Input mismatch if something other than an int is given
+		s.nextInt(); //Input mismatch if something other than an int is given
 
 
 		//Logical Errors - Program does something different than expected
 
 		// Assign 2 to 2 different variables.  Add them together and output the result
 
-		// int num2 = 2;
-		// int num3 = 3;
-		// System.out.println(num2 + num3);
+		int num2 = 2;
+		int num3 = 3;
+		System.out.println(num2 + num3);
 
 		//booleans all comparisons, and, not, or, order of operations
 
@@ -84,6 +84,10 @@ class Notes {
 		//NOT - ! - swap the value of a boolean
 
 		System.out.println(!true); //false
+		boolean b = true;
+		System.out.println(!b);
+		System.out.println(b == false); //!b
+		System.out.println(b == true); //pointless
 
 		//Order of operations of NOT AND OR.  Unless you use brackets to change the order
 
